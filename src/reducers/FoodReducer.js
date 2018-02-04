@@ -1,0 +1,15 @@
+import {
+    FOODS_FETCH_SUCCESS
+} from '../actions/types';
+
+const INITIAL_STATE = {};
+
+export default (state = INITIAL_STATE, action) => {
+    switch (action.type) {
+        case FOODS_FETCH_SUCCESS:
+            return action.payload;
+
+        default: 
+            return state;
+    }
+}
